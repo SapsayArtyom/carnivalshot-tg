@@ -1,0 +1,65 @@
+.App {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 40vh;
+    height: 80vh;
+    margin-top: 15vh;
+}
+.BA-box {
+    width: auto;
+    height: 90vh;
+}
+.BA-box:hover, .volume-button:hover {
+    cursor: pointer;
+}
+.App canvas {
+    height: 90%;
+    width: 100%;
+}
+.App canvas:focus {
+    outline: none;
+    border: none;
+}
+.logo-text {
+  font-family: 'GT Cinetype Regular';
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #eae9e1;
+}
+
+.tiny-logo {
+    width: 3.3%;
+    height: auto;
+    position: absolute; 
+    top: 7px;
+    right: 7px;
+}
+.music-control-container {
+    height: 50%;
+    width: 1rem;
+    background-color: transparent;
+    z-index:9999999999;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.volume-button {
+    height: 2rem;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.rangeslider-vertical .rangeslider__fill {
+    background-color: #E75757;
+}
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+}

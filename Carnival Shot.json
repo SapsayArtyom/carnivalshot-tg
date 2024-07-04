@@ -1,0 +1,159 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "",
+  "backendFolderName": "",
+  "certificateExceptions": [
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "https://localhost:8080"
+    },
+    {
+      "isAllowed": true,
+      "isEphemeral": false,
+      "isOrigin": true,
+      "value": "wss://localhost:8080"
+    }
+  ],
+  "extensionViews": [
+    {
+      "id": "1",
+      "label": "",
+      "channelId": "96399708",
+      "configurationAnchor": "video_overlay",
+      "displayChannelName": "gc1zzle",
+      "type": "dashboard",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": true,
+      "linkedUserId": "265737932",
+      "mode": "dashboard",
+      "isPopout": true,
+      "role": "Broadcaster",
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "viewerType": "Broadcaster"
+    },
+    {
+      "id": "2",
+      "label": "",
+      "channelId": "96399708",
+      "configurationAnchor": "video_overlay",
+      "displayChannelName": "gc1zzle",
+      "type": "video_overlay",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": true,
+      "linkedUserId": "265737932",
+      "mode": "viewer",
+      "isPopout": false,
+      "role": "Logged-In Viewer",
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "viewerType": "Logged-In Viewer"
+    },
+    {
+      "id": "6",
+      "label": "222222",
+      "channelId": "96399708",
+      "configurationAnchor": "video_overlay",
+      "displayChannelName": "gc1zzle",
+      "type": "mobile",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "linked": true,
+      "linkedUserId": "265737932",
+      "mode": "viewer",
+      "isPopout": false,
+      "role": "Logged-In Viewer",
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 320,
+        "height": 568
+      },
+      "viewerType": "Logged-In Viewer"
+    }
+  ],
+  "manifest": {
+    "anchor": "video_overlay",
+    "assetUrls": [],
+    "authorName": "GC Interactive, LLC",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost:8080/config.html",
+    "configurationLocation": "none",
+    "description": "Carnival Shot is a mini game for viewers to show their skill within the community. Viewers play the mini game when the streamer turns it on. Games can last any where from 30 second to 3 minutes. A leaderboard is displayed at the end of each game and the streamer can easily shout out the winners at each games conclusion. The extension works on PC. Players are trying to score the highest amount of points by clicking on targets that appear on screen.  150 points for bulls eye and 50 points for any target hit. ",
+    "eulaTosUrl": "https://app.termly.io/document/terms-of-use-for-website/b0093165-2cce-4ac7-9263-303e7849564a",
+    "hasChatSupport": false,
+    "iconUrl": "https://extensions-discovery-images.twitch.tv/x84chsx86b1or01dc76y0uagneqsx2/0.0.1/logo490fce93-3a81-4b92-aee2-162f7acba447",
+    "iconUrls": {
+      "100x100": "https://extensions-discovery-images.twitch.tv/x84chsx86b1or01dc76y0uagneqsx2/0.0.1/logo490fce93-3a81-4b92-aee2-162f7acba447",
+      "300x200": "https://extensions-discovery-images.twitch.tv/x84chsx86b1or01dc76y0uagneqsx2/0.0.1/discovery3e5056f8-3cde-4fbc-829c-f33ea1263f93"
+    },
+    "id": "x84chsx86b1or01dc76y0uagneqsx2",
+    "installationCount": -42,
+    "liveConfigUrl": "https://localhost:8080/live_config.html",
+    "name": "Carnival Shot",
+    "panelHeight": 0,
+    "privacyPolicyUrl": "https://app.termly.io/document/privacy-policy/fb6b7620-3edb-42d8-bf55-6f13b99130bd",
+    "requestIdentityLink": true,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [
+      "https://extensions-discovery-images.twitch.tv/x84chsx86b1or01dc76y0uagneqsx2/0.0.4/screenshot88887cab-57f3-4aaf-a4b9-0b5ba4aedc6f",
+      "https://extensions-discovery-images.twitch.tv/x84chsx86b1or01dc76y0uagneqsx2/0.0.4/screenshot1c132c7c-a8d7-4e48-a603-66ce17fca7ac",
+      "https://extensions-discovery-images.twitch.tv/x84chsx86b1or01dc76y0uagneqsx2/0.0.4/screenshot3d570ed6-b03a-4781-8add-541c1d0a3541"
+    ],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "This extension is a mini game for viewers to engage with and show their skill within the community! ",
+    "supportEmail": "support@ggconnect.co",
+    "vendorCode": "",
+    "version": "0.0.7",
+    "viewerSummary": "See if you're the best shot in the chat!",
+    "viewerUrl": "",
+    "viewerUrls": {
+      "videoOverlay": "https://localhost:8080/panel.html"
+    },
+    "views": {
+      "videoOverlay": {
+        "viewerUrl": "https://localhost:8080/panel.html",
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "https://localhost:8080/config.html",
+        "canLinkExternalContent": false
+      },
+      "liveConfig": {
+        "viewerUrl": "https://localhost:8080/live_config.html",
+        "canLinkExternalContent": false
+      },
+      "mobile": {
+        "viewerUrl": "https://localhost:8080/mobile.html",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "frontendCommand": "",
+  "frontendFolderName": "dist",
+  "name": "Carnival Shot",
+  "version": 2
+}

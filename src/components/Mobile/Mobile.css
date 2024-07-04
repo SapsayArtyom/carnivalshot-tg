@@ -1,0 +1,175 @@
+body {
+    background-color: black;
+}
+.App {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    /* width: 40vh;
+    height: 80vh;
+    margin-top: 15vh; */
+    height: 100vh;
+}
+.BA-box {
+    width: auto;
+    height: 90vh;
+}
+.BA-box:hover, .volume-button:hover {
+    cursor: pointer;
+}
+.App canvas {
+    /* height: 90%;
+    width: 100%; */
+    width: 101% !important;
+    height: 100% !important;
+}
+.App canvas:focus {
+    outline: none;
+    border: none;
+}
+.logo-text {
+  font-family: 'GT Cinetype Regular';
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #eae9e1;
+}
+
+.tiny-logo {
+    width: 3.3%;
+    height: auto;
+    position: absolute; 
+    top: 7px;
+    right: 7px;
+}
+.music-control-container {
+    height: 50%;
+    width: 1rem;
+    background-color: transparent;
+    z-index:9999999999;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.volume-button {
+    height: 2rem;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.rangeslider-vertical .rangeslider__fill {
+    background-color: #E75757;
+}
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+#containerDiv {
+    height: 100vh !important;
+    width: 46vh !important;
+}
+.countdown-overlay, .countdown-overlay-background {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100vh !important;
+    top: 0;
+}
+.App{
+    width: 46vh;
+}
+#bulletContainer, .countdown-overlay, .countdown-overlay-background, #scoreContainer {
+    width: 47vh !important;
+}
+#scoreContainer {
+    justify-content: space-around;
+    margin-top: 2vw;
+}
+#bulletContainer {
+    height: 22vh;
+    bottom: 0;
+}
+.bullet {
+    /* height: 1.3rem; */
+    height: 5.5vw;
+    width: auto;
+}
+.bullet-text {
+    font-size: 5.5vw;
+    /* font-size: 1.2rem; */
+}
+#smallLogo {
+    /* height: 1.6rem; */
+    height: 6vw;
+    width: auto;
+}
+.time-numbers, .score-numbers, #scoreHead, .time-text {
+    font-size: 0.9rem;
+}
+#smallLogoContainer {
+    bottom: 1.5vh;
+}
+.icon-set {
+    height: 1.5rem;
+}
+.time-container {
+    text-align: center;
+}
+#customCursor {
+    visibility: hidden;
+}
+
+/* leaderboards */
+#myScoreContainer {
+    bottom: 0;
+    width: 46vh;
+    height: 10vh;
+}
+.top-header {
+    height: 21%;
+}
+.column-header-text {
+    font-size: 1rem;
+}
+.name-text {
+    font-size: 0.7rem;
+}
+.time-container, .score-container, #bulletContainer {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+.multiplier-score-container {
+    align-items: flex-end;
+    right: 10px;
+    font-weight: bold;
+}
+.multiplier-score-container p {
+    text-shadow: #000000 0 0 10px;
+}
+.middle-size-text, .starts-text {
+    font-size: 1.3rem;
+}
+.score-picker-container {
+    height: 90vh;
+}
+#myScoreContainer .score-text {
+    font-size: 1rem;
+}
+.audio-button-rectangle {
+    width: 23vw;
+    height: 15vw;
+}
+#usernameContainer {
+    align-items: center;
+}
+#usernameInput, #submitNameButton {
+    width: 80%;
+}

@@ -1,0 +1,224 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+.score-picker-container {
+    height: 80vh;
+    width: 100%;
+    /* background-image: url('/carnival_assets/SG_Cartoon_LB_bg_1.png');
+    background-size: cover; */
+    z-index: 9999999999999999999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo {
+    height: 20%;
+    width: auto;
+}
+.score-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; 
+    height: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    z-index: 999999999;
+    padding-bottom: 3rem;
+    background: rgba(9,59,183,1);
+}
+.score-button-container::-webkit-scrollbar { 
+    display: none; 
+}
+#smallLogoContainer {
+    position: absolute;
+    bottom: 5.5vh;
+    margin-left: .1vw;
+    padding: 5px 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999999;
+}
+#myScoreContainer {
+    position: absolute;
+    bottom: 5vh;
+    width: 40vh;
+    height: 3rem;
+    background: rgb(0,49,113);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999;
+}
+.top-header{
+    width: 100%;
+    height: 19%;
+    background: transparent;
+    z-index: 99999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orange-big-text, .column-header-text {
+    color: white;
+    font-size: 1.8rem;
+}
+.column-header-text {
+    font-size: 1.2rem;
+}
+.blue-text {
+    color: white !important;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.column-header-container {
+    width: 100%;
+    height: 8.8%;
+    background-color: transparent;
+    z-index: 99999999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row;
+}
+#smallLogo {
+    height: 2rem;
+    width: auto;
+}
+.countdown-overlay, .countdown-overlay-background {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 15vh;
+    height: 80vh;
+    width: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.countdown-overlay-background {
+    background: url('../../../public/carnival_assets/SG_Cartoon_bg_1.png') cover;
+}
+.countdown-overlay, #startTimeText {
+    z-index: 99999999;
+}
+.countdown-overlay-background, #countdownLogo {
+    z-index: 9999999;
+
+}
+#countdownLogo {
+    width: 80%;
+    height: auto;
+}
+.individual-score-container {
+    width: 100%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    display: flex;
+    flex-flow: row;
+    min-height: 1rem;
+    max-height: 1rem;
+}
+.individual-score-container p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.play-button:hover {
+    cursor: pointer;
+}
+.score-picker-image {
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+}
+.individual-score-container-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-flow: row;
+}
+
+.play-button {
+    width: 40%;
+    height: auto;
+}
+.thank-text {
+    color: white;
+    font-family: 'GT Cinetype Regular';
+    font-size: 1rem;
+}
+.try-again-text {
+    color: white;
+    font-family: 'GT Cinetype Regular Italic';
+    font-size: 0.2rem;
+    margin-top: 0.2rem;
+}
+.position-container {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.1rem;
+    justify-content: center;
+}
+
+.position-text {
+    color: white;
+    font-size: 1rem;
+    font-family: 'GT Cinetype Bold';
+}
+.name-text {
+    font-family: 'GT Cinetype Bold';
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #eae9e1;
+}
+.individual-score-container-inner p {
+    /* width: 100%; */
+    text-align: center;
+}
+.odd-back {
+    background: rgba(22,85,195,1);
+}
+.even-back {
+    background: rgba(9,59,183,1);
+}
+
+@media only screen and (max-width: 1100px) {
+    .orange-big-text {
+        font-size: 1rem;
+    }
+    .column-header-text {
+        font-size: 0.7rem;
+    }
+    .position-text {
+        font-size: 0.75rem;
+    }
+    .name-text {
+        font-size: 0.5rem;
+    }
+    #smallLogo {
+        height: 1rem;
+        width: auto;
+    }
+    .score-text {
+        font-size: 0.75rem;
+    }
+}
+
+.position-text, .name-text  {
+    margin-left: 2vw;
+}
+.score-label {
+    margin-right: 2vw;
+    margin-left: auto;
+}

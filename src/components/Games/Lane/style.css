@@ -1,0 +1,395 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+*, canvas, #myCanvas {
+    font-family: 'Boogaloo', cursive;
+}
+/* canvas {
+    width: 100% !important;
+    height: 100% !important;
+} */
+#containerDiv {
+    height: 80vh;
+    width: 40vh;
+    /* width: 100%; */
+    cursor: none;
+}
+#canvas-container {
+    height: 80vh;
+    width: 40vh;
+  }
+#customCursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999999999999; 
+}
+.audio-button-rectangle {
+    width: 7rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.sound-on-prompt {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    z-index: 999999999;
+    transition: ease all 0.75s;
+    animation: slide-left 2s infinite;
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(0) rotate(0deg);  
+        transition: all .75s ease;
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-15%) rotate(0deg);  
+        transition: all .75s ease;
+        opacity: 1;
+    }
+}
+#submitNameButton {
+    background: rgb(242,211,9);
+    color: black;
+    border: none;
+    /* height: 1.5rem;
+    width: 10.2vw; */
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+#usernameContainer {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    margin-top: 1rem;
+}
+#usernameInput {
+    width: 10vw;
+    margin: 0;
+    margin-top: 0.2rem;
+}
+.middle-size-text, .starts-text {
+    color: white;
+    z-index: 99999;
+    font-size: 1.4rem;
+}
+.starts-text {
+    margin-top: 10%;
+    font-size: 2rem;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.icon-set {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 999;
+}
+.floatingScore {
+    position: absolute;
+    color: white;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite;
+    font-size: 1.5rem;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(2rem); color: rgba(255,255,255,0) }
+    50% {color: rgba(255,255,255,1) }
+    100% { transform: translateY(0rem); color: rgba(255,255,255,0)}
+}
+@keyframes mover {
+    0% { transform: translateY(2rem); color: rgba(255,255,255,0) }
+    50% {color: rgba(255,255,255,1) }
+    100% { transform: translateY(0rem); color: rgba(255,255,255,0)}
+}
+#outOfAmmo {
+    color:white;
+    position: absolute;
+    top: 45%;
+    width: 40vh;
+    text-align: center;
+    font-size: 2rem;
+    display: none;
+    animation:blinkingText 2s infinite;
+    z-index: 999;
+    font-weight: 700;
+}
+
+#startTimeText {
+    /* animation:blinkingText 2.2s infinite; */
+    z-index: 999;
+    font-size: 6rem;
+    color:white;
+}
+
+#smallLogoContainer {
+    position: absolute;
+    bottom: 5.5vh;
+    margin-left: .1vw;
+    padding: 5px 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.multiplier-score-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    top: 7vh;
+}
+
+#smallLogo {
+    height: 2rem;
+    width: auto;
+}
+
+.countdown-overlay, .countdown-overlay-background {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 15vh;
+    height: 81vh !important;
+    width: 40vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+}
+#usernamePrompt {
+    color: white;
+    text-align:center;
+}
+.countdown-overlay, #startTimeText {
+    z-index: 999999999;
+}
+.countdown-overlay-background, #countdownLogo {
+    z-index: 99999999;
+    filter: blur(4px);
+}
+#countdownLogo {
+    width: 80%;
+    height: auto;
+}
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    50%{    color: transparent; }
+    100%{   color: #fff;    }
+}
+
+#scoreContainer {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vh;
+    margin-top: 1rem;
+}
+
+.time-container, .score-container, #bulletContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#bulletContainer {
+    padding: 0;
+    position: absolute;
+    bottom:5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vh;
+    height: 20vh;
+}
+
+#audioText {
+    color: white;
+}
+#audioPrompt {
+    display: flex;
+    flex-flow: row;
+    width: auto;
+}
+.audio-arrow-left {
+    height: 1rem;
+    width: auto;
+    margin-right: 0.4rem;
+}
+.time-text, .time-numbers, .score-text, .score-numbers, .bullet-text {
+    color: white;
+    font-family: 'Boogaloo', cursive;
+    font-size: 0.8rem;
+}
+.time-text, .score-text {
+    color: rgb(246, 156, 3);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.score-numbers, .time-numbers {
+    font-size: 1.5rem;
+}
+.bullet-text {
+    font-size: 2rem;
+    font-family: 'Boogaloo', cursive;
+}
+
+.bullet {
+    height: auto;
+    width: 1.2rem;
+    margin: .1rem;
+}
+
+body {
+    background-color: transparent;
+    margin: 0;
+    overflow: hidden;
+    font-family: arial;
+}
+
+#blocker {
+    position: absolute;
+    width: 100%;
+    display: none;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#instructions {
+    display:none;
+}
+.multiplier-text {
+    margin-right: 0.2rem;
+    color: rgb(0,246,133);
+}
+
+@media only screen and (max-width: 1100px) {
+    #startTimeText { 
+        font-size: 3rem;
+    }
+    #outOfAmmo {
+        font-size: 1rem;
+    }
+    .time-text, .time-numbers, .score-text, .score-numbers, .bullet-text {
+        font-size: 0.7rem;
+    }
+    .score-numbers, .time-numbers {
+        font-size: 0.7rem;
+    }
+    .score-text {
+        font-size: 0.7rem;
+    }
+    .bullet-text {
+        font-size: 0.6rem;
+    }
+    .time-numbers, .score-numbers {
+        font-size: 0.7rem;
+    }
+    .icon-set {
+        height: 1rem;
+        width: auto;
+    }
+    #scoreHead {
+        font-size: 0.7rem;
+    }
+    .bullet {
+        height: 1rem;
+        width: auto;
+    }
+}
+
+/* loader */
+.loader-container {
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99999;
+}
+.loader,
+.loader:before,
+.loader:after {
+  background: rgb(242,211,9);
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: rgb(242,211,9);
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+.black-overlay {
+    background-color: black !important;
+}
