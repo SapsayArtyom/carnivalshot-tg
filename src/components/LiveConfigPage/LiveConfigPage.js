@@ -50,8 +50,8 @@ export default class LiveConfigPage extends React.Component {
                 this.setState({ userId, channelId });
 
                 pubnub = new PubNub({
-                    subscribeKey: "sub-c-d846e9d6-c1ef-11ea-8089-3ec3506d555b",
-                    publishKey: "pub-c-3ccd7481-7e33-4e2b-b950-9d4d231c7de7",
+                    subscribeKey: "",
+                    publishKey: "",
                     // secretKey: "secretKey",
                     uuid: `admin-${userId}`,
                     ssl: true
